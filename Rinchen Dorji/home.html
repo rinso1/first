@@ -1,0 +1,180 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Home Page</title>
+ 
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<style>
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ 
+  background-position: center;
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+
+/* Header */
+header {
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+/* Section */
+section {
+  padding: 20px;
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-section {
+  flex: 0 0 25%;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #030000;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(7, 0, 0, 0.1);
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+</style>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html" target="_blank">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="course.html" target="_blank">Courses</a></li>
+            <li><a href="regestration.html">Registration</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+    <img src="12345.jpg" alt="logo" height="60px" width="100px">
+  </header>
+  
+
+  <section>
+    <h1>Welcome to My Homepage</h1>
+    <p>Your source for interesting content and more.</p>
+    <br>
+    <br>
+    <hr>
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac turpis justo. Nulla facilisi. In hac habitasse platea dictumst. Vivamus vel urna at nisi ultrices bibendum. In at euismod ipsum. Proin nec nisi ac lorem pharetra vehicula eu non sapien. Vestibulum varius, lorem nec convallis tristique, ex tortor varius nunc, a gravida neque est non nisl.</p>
+
+        <h2>Our Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac turpis justo. Nulla facilisi. In hac habitasse platea dictumst. Vivamus vel urna at nisi ultrices bibendum. In at euismod ipsum. Proin nec nisi ac lorem pharetra vehicula eu non sapien. Vestibulum varius, lorem nec convallis tristique, ex tortor varius nunc, a gravida neque est non nisl.</p>
+    </div>
+
+
+  <footer>
+    
+    
+    <div class="footer-wrapper" id = "about">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Athang Learning Institute</p>
+      </div>
+      <div class="footer-section">
+        <h3>Services</h3>
+        <p>Register/ Course</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Address: Athang Training Institute</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-media">
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-youtube"></a>
+          <a href="#" class="fab fa-twitter"></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <br>
+    <p>&copy; 2021 Website. All rights reserved.</p>
+    <br>
+    
+  </footer>
+</body>
+
+</html>

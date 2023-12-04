@@ -1,0 +1,230 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Home Page</title>
+ 
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<style>
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ 
+  background-position: center;
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+
+/* Header */
+header {
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+/* Section */
+section {
+  padding: 20px;
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-section {
+  flex: 0 0 25%;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+
+
+.contact-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between;
+  }
+
+  .contact-box {
+    flex: 0 0 calc(50% - 20px); /* Two boxes per row on smaller screens */
+    margin-right: 20px; /* Add some margin between contact-boxes */
+    margin-bottom: 20px; /* Add vertical spacing between rows */
+  }
+
+  @media (min-width: 768px) {
+    .contact-box {
+      flex: 0 0 calc(25% - 20px); /* Four boxes per row on larger screens */
+    }
+  }
+</style>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html" target="_blank">Home</a></li>
+        <li><a href="about.html" target="_blank">About</a></li>
+        <li class="dropdown">
+          <a href="#">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="contact.html" target="_blank">Courses</a></li>
+            <li><a href="regestration.html">Registration</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+      </ul>
+    </nav>
+    <img src="12345.jpg" alt="logo" height="60px" width="100px">
+  </header>
+  
+
+  <section>
+   <h1>contact information</h1>
+    <br>
+    <br>
+    <div class="contact-wrapper">
+    <div class="contact-box">
+        <h3>Contact</h3>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: example@example.com</p>
+      </div>
+      
+      <div class="contact-box">
+        <h3>Location</h3>
+        <p>123 Main Street</p>
+        <p>City, State, ZIP</p>
+      </div>
+      
+      <div class="contact-box">
+        <h3>Link</h3>
+        <p>Website: www.example.com</p>
+      </div>
+      
+      <div class="contact-box">
+        <h3>Facebook</h3>
+        <p>Facebook: www.facebook.com/example</p>
+      </div>
+      
+      <div class="contact-box">
+        <h3>Instagram</h3>
+        <p>Instagram: www.instagram.com/example</p>
+      </div>
+
+    </div>
+  </section>
+ 
+ 
+  <section>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget felis sed nibh mattis laoreet at sit amet
+      elit. Integer id lacus malesuada, hendrerit mauris et, ullamcorper orci. Donec scelerisque vehicula gravida. Proin
+      at nulla vulputate, viverra diam nec, auctor lorem. Ut iaculis, enim ac condimentum ultricies, felis quam tempus
+      mauris, ac finibus leo risus efficitur leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget felis sed nibh mattis laoreet at sit amet
+      elit. Integer id lacus malesuada, hendrerit mauris et, ullamcorper orci. Donec scelerisque vehicula gravida. Proin
+      at nulla vulputate, viverra diam nec, auctor lorem. Ut iaculis, enim ac condimentum ultricies, felis quam tempus
+      mauris, ac finibus leo risus efficitur leo.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget felis sed nibh mattis laoreet at sit amet
+      elit. Integer id lacus malesuada, hendrerit mauris et, ullamcorper orci. Donec scelerisque vehicula gravida. Proin
+      at nulla vulputate, viverra diam nec, auctor lorem. Ut iaculis, enim ac condimentum ultricies, felis quam tempus
+      mauris, ac finibus leo risus efficitur leo.</p>
+  </section>
+
+  <footer>
+    
+    
+    <div class="footer-wrapper" id = "about">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Athang Learning Institute</p>
+      </div>
+      <div class="footer-section">
+        <h3>Services</h3>
+        <p>Register/ Course</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Address: Athang Training Institute</p>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-media">
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-youtube"></a>
+          <a href="#" class="fab fa-twitter"></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <br>
+    <p>&copy; 2021 Website. All rights reserved.</p>
+    <br>
+    
+  </footer>
+</body>
+
+</html>
